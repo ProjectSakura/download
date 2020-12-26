@@ -1,7 +1,6 @@
 export default {
-  APP_NAME: 'AOSPK',
-  APP_SUBNAME: 'AOSPK',
-  APP_DESC: 'The Kraken Project',
+  APP_NAME: 'Project Sakura | Downloads',
+  APP_SUBNAME: 'Project Sakura ',
+  APP_DESC: 'Project Sakura download page for official devices',
   APP_LOGO: '/img/logo.png',
-  API_BASE: 'https://krakenapi.andersonmendess.now.sh/devices',
 };

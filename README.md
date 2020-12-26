@@ -1,4 +1,4 @@
-# kraken-vue
+# Project Sakura Download Page
 
 ## Project setup
 ```

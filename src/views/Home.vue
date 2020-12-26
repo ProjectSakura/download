@@ -24,8 +24,8 @@ export default {
     Logo,
   },
   created() {
-    document.title = 'AOSPK - The Kraken Project';
-    document.head.querySelector('meta[name=description]').content = 'AOSPK - The Kraken Project | Download Center';
+    document.title = 'Project Sakura | Downloads';
+    document.head.querySelector('meta[name=description]').content = 'Project Sakura | Downloads';
   },
   computed: {
     subname() {

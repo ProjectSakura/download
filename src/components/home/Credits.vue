@@ -14,11 +14,11 @@ export default {
       credits: [
         {
           title: 'Project maintained by',
-          value: 'mamutal91',
-          url: 'https://github.com/mamutal91',
+          value: 'LordShenron and Arun Teltia',
+          url: 'https://github.com/LordShenron',
         },
         {
-          title: 'Website developed by',
+          title: 'Website Originally developed by',
           value: 'andersonmendess',
           url: 'https://github.com/andersonmendess',
         },
