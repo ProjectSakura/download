@@ -30,7 +30,7 @@
                 <p>MD5: {{build.md5}}</p>
               </div>
               <div class="deviceprop">
-                <p>Version: Android {{build.android}}</p>
+                <p>Version: {{build.version}}</p>
               </div>
               <div class="deviceprop">
                 <p>Downloads: {{build.downloads}}</p>
@@ -72,7 +72,7 @@ export default {
         'getIndexOfExpandedBuild',
         this.$route.params.filename,
       );
-      document.title = this.$route.params.filename || `Download Kraken for ${this.$route.params.codename}`;
+      document.title = this.$route.params.filename || `Download ProjectSakura for ${this.$route.params.codename}`;
     }
     this.openBuild(this.$store.state.expandedBuild);
     this.$store.dispatch('getIndexOfExpandedBuild', '');

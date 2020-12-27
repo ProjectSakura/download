@@ -37,7 +37,7 @@
 
           <div v-if="!device.active" class="card-action xda-buttons">
             <a
-              href="https://forms.gle/k967Pzrqd1PBSqQTA"
+              href="https://forms.gle/dchk8MiQhna6cFts7"
               target="_blank"
               class="waves-effect btn red-bg"
             >Become the maintainer</a>
@@ -70,7 +70,7 @@ export default {
       const { device } = this.$store.state;
 
       if (device && device.name) {
-        document.title = `${device.name} (${this.$route.params.codename}) | Kraken Download Center`;
+        document.title = `${device.name} (${this.$route.params.codename}) | Project Sakura Downloads`;
       }
 
       return device;
