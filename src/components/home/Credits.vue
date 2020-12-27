@@ -6,8 +6,8 @@
       <a href="https://github.com/ArunTeltia">Arun Teltia</a>
     </div>
     <div class="credits">
-      Website developed by
-      <a href="https://github.com/andersonmendess">andersonmendess</a>
+      Sponsored by
+      <a href="">XSLTEL OU</a>
     </div>
     <div class="container" style="width:100%">
       <center>
@@ -54,9 +54,9 @@ export default {
           url: "https://github.com/ArunTeltia"
         },
         {
-          title: "Website Originally developed by",
-          value: "andersonmendess",
-          url: "https://github.com/andersonmendess"
+          title: "Sponsored by ",
+          value: "XSLTEL OU",
+          url: ""
         }
       ]
     };
