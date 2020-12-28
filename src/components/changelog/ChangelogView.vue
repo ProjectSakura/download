@@ -1,30 +1,28 @@
 <template>
-    <div class="container">
-
-      <VueMarkdown v-if="changes" class="md">
-        {{changes}}
-      </VueMarkdown>
-    </div>
+  <div class="container">
+    <VueMarkdown v-if="changes" class="md">
+      {{ changes }}
+    </VueMarkdown>
+  </div>
 </template>
 <script>
-import VueMarkdown from 'vue-markdown';
+import VueMarkdown from "vue-markdown";
 
-import { fetchROMChangelog } from '../../services/github';
+import { fetchROMChangelog } from "../../services/github";
 
 export default {
-  name: 'ChangelogView',
+  name: "ChangelogView",
   components: {
-    VueMarkdown,
+    VueMarkdown
   },
   data() {
     return {
-      changes: null,
+      changes: null
     };
   },
   created() {
-    fetchROMChangelog()
-      .then(ch => this.changes = ch);
-  },
+    fetchROMChangelog().then(ch => (this.changes = ch));
+  }
 };
 </script>
 <style scoped>
