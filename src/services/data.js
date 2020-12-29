@@ -30,16 +30,6 @@ const data = [
     active: true
   },
   {
-    brand: "OnePlus",
-    name: "OnePlus 8",
-    codename: "instantnoodles",
-    maintainer_name: "Jacks",
-    maintainer_xda: "null",
-    maintainer_country: "US",
-    xda_thread: "",
-    active: true
-  },
-  {
     brand: "Realme",
     name: "Realme 1",
     codename: "CPH1859",
