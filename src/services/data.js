@@ -83,7 +83,7 @@ const data = [
     brand: "Xiaomi",
     name: "Mi Note 10",
     codename: "tucana",
-    maintainer_name: "Alexander",
+    maintainer_name: "Sanya Pilot",
     maintainer_xda: "null",
     maintainer_country: "RUS",
     xda_thread: "",
@@ -103,9 +103,9 @@ const data = [
     brand: "Xiaomi",
     name: "Redmi Note 8 PRO",
     codename: "begonia",
-    maintainer_name: "Haridhayal",
+    maintainer_name: "Himanshu",
     maintainer_xda: "null",
-    maintainer_country: "SL",
+    maintainer_country: "IND",
     xda_thread: "",
     active: true
   }
