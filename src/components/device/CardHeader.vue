@@ -1,27 +1,29 @@
 <template>
   <div v-if="device.name">
-    <h5 class="center upper-bold accent">{{device.brand}} {{device.name}} ({{device.codename}})</h5>
+    <h5 class="center upper-bold accent">
+      {{ device.brand }} {{ device.name }} ({{ device.codename }})
+    </h5>
     <div class="row limiter">
       <div class="col s12 m12">
         <div class="builds cardColor z-depth-1">
           <div class="deviceprop">
             <i class="material-icons">domain</i>
-            <h6>{{device.brand}}</h6>
+            <h6>{{ device.brand }}</h6>
           </div>
 
           <div class="deviceprop">
             <i class="material-icons">phone_android</i>
-            <h6>{{device.name}}</h6>
+            <h6>{{ device.name }}</h6>
           </div>
 
           <div class="deviceprop">
             <i class="material-icons">device_unknown</i>
-            <h6>{{device.codename}}</h6>
+            <h6>{{ device.codename }}</h6>
           </div>
 
           <div v-if="device.active" class="deviceprop">
             <i class="material-icons">person_outline</i>
-            <h6>{{device.maintainer_name}}</h6>
+            <h6>{{ device.maintainer_name }}</h6>
             <Flag width="20px" :country="device.maintainer_country" />
           </div>
 
@@ -30,9 +32,22 @@
             <h6>No maintainer</h6>
           </div>
 
-          <div v-if="device.xda_thread && device.active" class="card-action xda-buttons">
-            <a v-bind:href="device.maintainer_xda" target="_blank" class="waves-effect btn">XDA Profile</a>
-            <a v-bind:href="device.xda_thread" target="_blank" class="waves-effect btn">XDA Thread</a>
+          <div
+            v-if="device.xda_thread && device.active"
+            class="card-action xda-buttons"
+          >
+            <a
+              v-bind:href="device.maintainer_xda"
+              target="_blank"
+              class="waves-effect btn"
+              >XDA Profile</a
+            >
+            <a
+              v-bind:href="device.xda_thread"
+              target="_blank"
+              class="waves-effect btn"
+              >XDA Thread</a
+            >
           </div>
 
           <div v-if="!device.active" class="card-action xda-buttons">
@@ -40,7 +55,8 @@
               href="https://forms.gle/dchk8MiQhna6cFts7"
               target="_blank"
               class="waves-effect btn red-bg"
-            >Become the maintainer</a>
+              >Become the maintainer</a
+            >
           </div>
         </div>
       </div>
@@ -56,25 +72,26 @@
   </div>
 </template>
 <script>
-
-import Flag from '../common/Flag';
+import Flag from "../common/Flag";
 
 export default {
-  name: 'CardHeader',
+  name: "CardHeader",
   components: {
-     Flag,
+    Flag
   },
   computed: {
     device() {
-      this.$store.dispatch('filterDevice', this.$route.params);
+      this.$store.dispatch("filterDevice", this.$route.params);
       const { device } = this.$store.state;
 
       if (device && device.name) {
-        document.title = `${device.name} (${this.$route.params.codename}) | Project Sakura Downloads`;
+        document.title = `${device.name} (${
+          this.$route.params.codename
+        }) | Project Sakura Downloads`;
       }
 
       return device;
-    },
-  },
+    }
+  }
 };
 </script>
