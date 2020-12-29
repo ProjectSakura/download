@@ -1,25 +1,5 @@
 <template>
   <div>
-    <div class="container" style="width:100%">
-      <center>
-        <script
-          type="application/javascript"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
-        <!-- sakura-horizontal-unit-2 -->
-        <ins
-          class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-1277633863266032"
-          data-ad-slot="8931146882"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins>
-        <script type="application/javascript">
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </center>
-    </div>
     <div class="row center">
       <div class="col s12 m12">
         <ul class="collapsible collapsible-builds">
@@ -78,7 +58,29 @@
         <Loading v-if="$store.state.buildLoader" />
       </div>
     </div>
+    <div class="container" style="width:100%">
+      <center>
+        <script
+          type="application/javascript"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+        <!-- sakura-horizontal-unit-2 -->
+        <ins
+          class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1277633863266032"
+          data-ad-slot="8931146882"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script type="application/javascript">
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </center>
+    </div>
   </div>
+  
 </template>
 <script>
 import Loading from "../common/Loading.vue";
