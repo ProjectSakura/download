@@ -40,16 +40,6 @@ const data = [
     active: true
   },
   {
-    brand: "Realme",
-    name: "Realme U1",
-    codename: "RMX1831",
-    maintainer_name: "CyberJalagam",
-    maintainer_xda: "null",
-    maintainer_country: "IND",
-    xda_thread: "",
-    active: true
-  },
-  {
     brand: "Samsung",
     name: "Galaxy A30",
     codename: "a30",
