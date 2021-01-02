@@ -20,6 +20,16 @@ const data = [
     active: true
   },
   {
+    brand: "Moto",
+    name: "Moto G5S+",
+    codename: "sanders",
+    maintainer_name: "ArmSM",
+    maintainer_xda: "null",
+    maintainer_country: "ARM",
+    xda_thread: "",
+    active: true
+  },
+  {
     brand: "OnePlus",
     name: "OnePlus 3/3T",
     codename: "oneplus3",
@@ -79,6 +89,7 @@ const data = [
     xda_thread: "",
     active: true
   },
+
   {
     brand: "Xiaomi",
     name: "Mi Note 10",
@@ -89,6 +100,7 @@ const data = [
     xda_thread: "",
     active: true
   },
+
   {
     brand: "Xiaomi",
     name: "Redmi Note 7 PRO",
@@ -106,6 +118,16 @@ const data = [
     maintainer_name: "Himanshu",
     maintainer_xda: "null",
     maintainer_country: "IND",
+    xda_thread: "",
+    active: true
+  },
+  {
+    brand: "Xiaomi",
+    name: "Xiaomi Mi 6X",
+    codename: "wayne",
+    maintainer_name: "Roger W.",
+    maintainer_xda: "null",
+    maintainer_country: "BR",
     xda_thread: "",
     active: true
   }
