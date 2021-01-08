@@ -89,7 +89,16 @@ const data = [
     xda_thread: "",
     active: true
   },
-
+  {
+    brand: "Xiaomi",
+    name: "Xiaomi Mi A2",
+    codename: "tissot",
+    maintainer_name: "Roger W.",
+    maintainer_xda: "null",
+    maintainer_country: "BR",
+    xda_thread: "",
+    active: true
+  },
   {
     brand: "Xiaomi",
     name: "Mi Note 10",
@@ -100,7 +109,26 @@ const data = [
     xda_thread: "",
     active: true
   },
-
+  {
+    brand: "Xiaomi",
+    name: "Redmi 6 Pro",
+    codename: "sakura",
+    maintainer_name: "Alex",
+    maintainer_xda: "null",
+    maintainer_country: "US",
+    xda_thread: "",
+    active: true
+  },
+  {
+    brand: "Xiaomi",
+    name: "Redmi Note 5 PRO",
+    codename: "whyred",
+    maintainer_name: "DarkStar",
+    maintainer_xda: "null",
+    maintainer_country: "IND",
+    xda_thread: "",
+    active: true
+  },
   {
     brand: "Xiaomi",
     name: "Redmi Note 7 PRO",
@@ -123,13 +151,14 @@ const data = [
   },
   {
     brand: "Xiaomi",
-    name: "Xiaomi Mi 6X",
-    codename: "wayne",
-    maintainer_name: "Roger W.",
+    name: "Redmi Note 9 PRO",
+    codename: "miatoll",
+    maintainer_name: "A9ito",
     maintainer_xda: "null",
-    maintainer_country: "BR",
+    maintainer_country: "IND",
     xda_thread: "",
     active: true
-  }
+  },
+  
 ];
 export default data;
