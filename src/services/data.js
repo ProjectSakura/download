@@ -91,7 +91,17 @@ const data = [
   },
   {
     brand: "Xiaomi",
-    name: "Xiaomi Mi A2",
+    name: "Poco X2",
+    codename: "phoenix",
+    maintainer_name: "Shivam",
+    maintainer_xda: "null",
+    maintainer_country: "IND",
+    xda_thread: "",
+    active: true
+  },
+  {
+    brand: "Xiaomi",
+    name: "Xiaomi Mi A1",
     codename: "tissot",
     maintainer_name: "Roger W.",
     maintainer_xda: "null",
@@ -155,7 +165,7 @@ const data = [
     codename: "miatoll",
     maintainer_name: "A9ito",
     maintainer_xda: "null",
-    maintainer_country: "IND",
+    maintainer_country: "ID",
     xda_thread: "",
     active: true
   },
