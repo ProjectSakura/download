@@ -131,7 +131,7 @@ const data = [
   },
   {
     brand: "Xiaomi",
-    name: "Redmi Note 5 PRO",
+    name: "Redmi Note 5",
     codename: "rosy",
     maintainer_name: "Shriiyansh",
     maintainer_xda: "null",
