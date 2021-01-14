@@ -132,6 +132,16 @@ const data = [
   {
     brand: "Xiaomi",
     name: "Redmi Note 5 PRO",
+    codename: "rosy",
+    maintainer_name: "Shriiyansh",
+    maintainer_xda: "null",
+    maintainer_country: "IND",
+    xda_thread: "",
+    active: true
+  },
+  {
+    brand: "Xiaomi",
+    name: "Redmi Note 5 PRO",
     codename: "whyred",
     maintainer_name: "DarkStar",
     maintainer_xda: "null",
