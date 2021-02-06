@@ -57,7 +57,7 @@ const data = [
     maintainer_xda: "null",
     maintainer_country: "SL",
     xda_thread: "",
-    active: true
+    active: false
   },
   {
     brand: "Samsung",
@@ -67,7 +67,7 @@ const data = [
     maintainer_xda: "null",
     maintainer_country: "SL",
     xda_thread: "",
-    active: true
+    active: false
   },
   {
     brand: "Samsung",
@@ -87,7 +87,7 @@ const data = [
     maintainer_xda: "null",
     maintainer_country: "SL",
     xda_thread: "",
-    active: true
+    active: false
   },
   {
     brand: "Xiaomi",
@@ -96,6 +96,16 @@ const data = [
     maintainer_name: "Shivam",
     maintainer_xda: "null",
     maintainer_country: "IND",
+    xda_thread: "",
+    active: true
+  },
+  {
+    brand: "Xiaomi",
+    name: "Poco X3",
+    codename: "surya",
+    maintainer_name: "Agus",
+    maintainer_xda: "null",
+    maintainer_country: "ID",
     xda_thread: "",
     active: true
   },
@@ -151,6 +161,16 @@ const data = [
   },
   {
     brand: "Xiaomi",
+    name: "Redmi K20",
+    codename: "davinci",
+    maintainer_name: "Gabriel",
+    maintainer_xda: "null",
+    maintainer_country: "BR",
+    xda_thread: "",
+    active: true
+  },
+  {
+    brand: "Xiaomi",
     name: "Redmi Note 7 PRO",
     codename: "violet",
     maintainer_name: "Nitish and Prajwal",
@@ -167,7 +187,7 @@ const data = [
     maintainer_xda: "null",
     maintainer_country: "IND",
     xda_thread: "",
-    active: true
+    active: false
   },
   {
     brand: "Xiaomi",
