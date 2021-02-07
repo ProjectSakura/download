@@ -40,12 +40,32 @@ const data = [
     active: true
   },
   {
+    brand: "OnePlus",
+    name: "OnePlus 6",
+    codename: "enchilada",
+    maintainer_name: "Zahidmgsk",
+    maintainer_xda: "null",
+    maintainer_country: "PAK",
+    xda_thread: "",
+    active: true
+  },
+  {
     brand: "Realme",
     name: "Realme 1",
     codename: "CPH1859",
     maintainer_name: "CyberJalagam",
     maintainer_xda: "null",
     maintainer_country: "IND",
+    xda_thread: "",
+    active: true
+  },
+  {
+    brand: "Samsung",
+    name: "Galaxy A10",
+    codename: "a10",
+    maintainer_name: "Chatur",
+    maintainer_xda: "null",
+    maintainer_country: "MAUR",
     xda_thread: "",
     active: true
   },
@@ -198,7 +218,6 @@ const data = [
     maintainer_country: "ID",
     xda_thread: "",
     active: true
-  },
-  
+  }
 ];
 export default data;

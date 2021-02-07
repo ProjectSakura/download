@@ -6,7 +6,7 @@ export default {
   props: ["width", "country"],
   name: "Flag",
   computed: {
-    flag: function() {
+    flag: function () {
       const flags = {
         BR:
           "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/flag-brazil_1f1e7-1f1f7.png",
@@ -21,9 +21,13 @@ export default {
         RUS:
           "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/flag-russia_1f1f7-1f1fa.png",
         ARM:
-          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/flag-armenia_1f1e6-1f1f2.png",          
+          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/flag-armenia_1f1e6-1f1f2.png",
         ID:
-          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/flag-indonesia_1f1ee-1f1e9.png"          
+          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/flag-indonesia_1f1ee-1f1e9.png",
+        PAK:
+          "https://flaglane.com/download/pakistani-flag/pakistani-flag-graphic.png",
+        MAUR:
+          "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg",
       };
 
       if (flags[this.country]) {
@@ -31,8 +35,8 @@ export default {
       } else {
         return "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Noflag.PNG/120px-Noflag.PNG";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style>
