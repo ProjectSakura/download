@@ -60,6 +60,16 @@ const data = [
     active: true
   },
   {
+    brand: "Realme",
+    name: "Realme 6",
+    codename: "RMX2001",
+    maintainer_name: "Tanmay",
+    maintainer_xda: "null",
+    maintainer_country: "IND",
+    xda_thread: "",
+    active: true
+  },
+  {
     brand: "Samsung",
     name: "Galaxy A10",
     codename: "a10",
@@ -193,7 +203,7 @@ const data = [
     brand: "Xiaomi",
     name: "Redmi Note 7 PRO",
     codename: "violet",
-    maintainer_name: "Nitish and Prajwal",
+    maintainer_name: "SpicyDoughnut",
     maintainer_xda: "null",
     maintainer_country: "IND",
     xda_thread: "",
