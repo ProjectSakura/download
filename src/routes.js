@@ -6,7 +6,7 @@ export const routes = [
   { path: '/download', component: Home, name: 'home' },
   { path: '/download/changelog', component: Changelog, name: 'changelog' },
   {
-    path: '/download/:codename',
+    path: '/download',
     component: Device,
     name: 'device',
     children: [
