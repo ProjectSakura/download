@@ -10,7 +10,7 @@ export const routes = [
     component: Device,
     name: 'device',
     children: [
-      { path: ':filename?', name: 'filename' },
+      { path: ':codename/:filename?', name: "filename" },
     ],
   },
 ];
