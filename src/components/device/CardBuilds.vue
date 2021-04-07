@@ -9,6 +9,7 @@
             @click="setBuild(build.filename)"
             class="buildcoll"
           >
+            <div>Android {{ build.android }}</div>
             <div class="collapsible-header white-text cardColor">
               <i class="material-icons">system_update</i>
               <span style="width: 100%">{{ build.filename }}</span>
@@ -59,7 +60,6 @@
       </div>
     </div>
   </div>
-  
 </template>
 <script>
 import Loading from "../common/Loading.vue";
@@ -68,7 +68,7 @@ import { generateDownloadURL } from "../../services/sourceforge";
 export default {
   name: "CardBuilds",
   components: {
-    Loading
+    Loading,
   },
   updated() {
     if (this.$route.params.filename) {
@@ -104,7 +104,7 @@ export default {
     download(file, codename) {
       M.toast({ html: "Download Started" });
       location.href = generateDownloadURL(file, codename);
-    }
+    },
   },
   computed: {
     deviceBuilds() {
@@ -112,7 +112,7 @@ export default {
     },
     device() {
       return this.$store.state.device;
-    }
-  }
+    },
+  },
 };
 </script>
