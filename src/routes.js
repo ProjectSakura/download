@@ -6,11 +6,11 @@ export const routes = [
   { path: '/download', component: Home, name: 'home' },
   { path: '/download/changelog', component: Changelog, name: 'changelog' },
   {
-    path: '/download',
+    path: '/download/:codename',
     component: Device,
     name: 'device',
     children: [
-      { path: ':codename/:filename?', name: "filename" },
+      { path: ':filename?', name: 'filename' },
     ],
   },
 ];
