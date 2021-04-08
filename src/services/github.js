@@ -1,13 +1,11 @@
 import request from "../helpers/request";
 import { fetchDownloadsCount } from "./sourceforge";
 import { humanDate, humanSize } from "../helpers/utils";
-import data from "./data.js";
 const baseURL = "https://raw.githubusercontent.com/ProjectSakura";
 
 const fetchDevices = async () => {
   try {
-    // const res = await request(`${baseURL}/OTA/11/devices.json`);
-    const res = data;
+    const res = await request(`${baseURL}/OTA/11/devices.json`);
     const brands = [];
     const devices = [];
 
