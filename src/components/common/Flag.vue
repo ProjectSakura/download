@@ -28,6 +28,10 @@ export default {
           "https://flaglane.com/download/pakistani-flag/pakistani-flag-graphic.png",
         MAUR:
           "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg",
+        KAZ:
+          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/281/flag-kazakhstan_1f1f0-1f1ff.png",
+        ALB:
+          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/281/flag-albania_1f1e6-1f1f1.png",     
       };
 
       if (flags[this.country]) {
