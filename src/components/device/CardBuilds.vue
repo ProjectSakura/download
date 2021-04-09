@@ -102,7 +102,7 @@ export default {
       }
     },
     download(file, codename) {
-      M.toast({ html: "Download Started" });
+      M.toast({ html: "Starting Download... Please Wait..." });
       location.href = generateDownloadURL(file, codename);
     },
   },
