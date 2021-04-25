@@ -33,6 +33,17 @@
           </div>
 
           <div
+            v-if="device.donation_link && device.active"
+            class="card-action xda-buttons"
+          >
+          <a
+            v-bind:href="device.donation_link"
+            target="_blank"
+            class="waves-effect btn"
+            >Donate to Maintainer</a
+          >
+          </div>
+          <div
             v-if="device.xda_thread && device.active"
             class="card-action xda-buttons"
           >
