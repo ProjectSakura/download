@@ -10,6 +10,8 @@ export default {
       const flags = {
         BR:
           "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/flag-brazil_1f1e7-1f1f7.png",
+        BRA:
+          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/flag-brazil_1f1e7-1f1f7.png",
         IND:
           "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/flag-india_1f1ee-1f1f3.png",
         US:
@@ -31,7 +33,11 @@ export default {
         KAZ:
           "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/281/flag-kazakhstan_1f1f0-1f1ff.png",
         ALB:
-          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/281/flag-albania_1f1e6-1f1f1.png",     
+          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/281/flag-albania_1f1e6-1f1f1.png",
+        GER:
+          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/281/flag-germany_1f1e9-1f1ea.png",
+        GBR:
+          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/281/flag-united-kingdom_1f1ec-1f1e7.png",
       };
 
       if (flags[this.country]) {
