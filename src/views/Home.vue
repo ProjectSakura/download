@@ -1,29 +1,33 @@
 <template>
   <div class="home center">
-    <h3 class="accent welcome">{{subname}}</h3>
+    <h3 class="accent welcome">{{ subname }}</h3>
+    <Ninja />
     <Logo width="350px" />
-    
-    <ProjectLink/>
-    <Credits/>
+
+    <ProjectLink />
+    <Credits />
   </div>
 </template>
 
 <script>
-import ProjectLink from '../components/home/ProjectLink.vue';
-import Credits from '../components/home/Credits.vue';
-import configs from '../configs';
-import Logo from "../components/common/Logo";
+import ProjectLink from "../components/home/ProjectLink.vue";
+import Credits from "../components/home/Credits.vue";
+import configs from "../configs";
+import Logo from "../components/common/Logo.vue";
+import Ninja from "../components/common/Ninja.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     ProjectLink,
     Credits,
     Logo,
+    Ninja,
   },
   created() {
-    document.title = 'Project Sakura | Downloads';
-    document.head.querySelector('meta[name=description]').content = 'Project Sakura | Downloads';
+    document.title = "Project Sakura | Downloads";
+    document.head.querySelector("meta[name=description]").content =
+      "Project Sakura | Downloads";
   },
   computed: {
     subname() {
