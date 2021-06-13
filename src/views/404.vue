@@ -23,8 +23,7 @@ export default {
   },
   created() {
     document.title = "Project Sakura | Downloads";
-    document.head.querySelector("meta[name=description]").content =
-      "Project Sakura | Downloads";
+    document.head.querySelector("meta[name=description]").content = "Project Sakura | Downloads";
   },
   computed: {
     subname() {

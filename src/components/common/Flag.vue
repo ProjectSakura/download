@@ -6,7 +6,7 @@ export default {
   props: ["width", "country"],
   name: "Flag",
   computed: {
-    flag: function () {
+    flag() {
       const flags = {
         BR:
           "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/flag-brazil_1f1e7-1f1f7.png",
@@ -42,9 +42,8 @@ export default {
 
       if (flags[this.country]) {
         return flags[this.country];
-      } else {
-        return "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Noflag.PNG/120px-Noflag.PNG";
       }
+      return "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Noflag.PNG/120px-Noflag.PNG";
     },
   },
 };

@@ -9,19 +9,19 @@
 
 <script>
 
-import 'materialize-css';
-import 'materialize-css/dist/css/materialize.css';
+import "materialize-css";
+import "materialize-css/dist/css/materialize.css";
 
-import '../public/css/styles.css';
+import "../public/css/styles.css";
 
-import Navbar from './components/Navbar.vue';
-import Sidebar from './components/Sidebar.vue';
-import ThemeEngine from './components/common/ThemeEngine.vue';
+import Navbar from "./components/Navbar.vue";
+import Sidebar from "./components/Sidebar.vue";
+import ThemeEngine from "./components/common/ThemeEngine.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   created() {
-    this.$store.dispatch('fetchDevices');
+    this.$store.dispatch("fetchDevices");
   },
   components: {
     Navbar,

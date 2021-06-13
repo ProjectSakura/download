@@ -6,7 +6,7 @@ const baseURL = "https://sourceforge.net/projects/projectsakura";
 const fetchDownloadsCount = async (filename, codename) => {
   try {
     const res = await request(
-      `${baseURL}/files/${codename}/${filename}/stats/json?start_date=2019-04-06&end_date=${getToday()}`
+      `${baseURL}/files/${codename}/${filename}/stats/json?start_date=2019-04-06&end_date=${getToday()}`,
     );
     return res.total;
   } catch (err) {

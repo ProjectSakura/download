@@ -4,10 +4,10 @@
     <div class="buttons">
       <a
         target="_blank"
-        href="https://projectsakura.xyz/donation"
+        href="https://projectsakura.xyz/blog/#/donation"
         @click="hidebar"
         class="btn"
-        >Donate to ROM</a
+        >Donate us</a
       >
       <a
         target="_blank"

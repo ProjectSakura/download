@@ -13,16 +13,16 @@ import { fetchROMChangelog } from "../../services/github";
 export default {
   name: "ChangelogView",
   components: {
-    VueMarkdown
+    VueMarkdown,
   },
   data() {
     return {
-      changes: null
+      changes: null,
     };
   },
   created() {
     fetchROMChangelog().then(ch => (this.changes = ch));
-  }
+  },
 };
 </script>
 <style scoped>

@@ -88,7 +88,7 @@ import Flag from "../common/Flag";
 export default {
   name: "CardHeader",
   components: {
-    Flag
+    Flag,
   },
   computed: {
     device() {
@@ -102,7 +102,7 @@ export default {
       }
 
       return device;
-    }
-  }
+    },
+  },
 };
 </script>

@@ -28,11 +28,11 @@ export default {
   name: "Search",
   data() {
     return {
-      search: ""
+      search: "",
     };
   },
   mounted() {
-    document.addEventListener("keypress", event => {
+    document.addEventListener("keypress", (event) => {
       if (event.keyCode == 13) {
         if (document.querySelector(".search-link") != null) {
           this.resetSearch();
@@ -41,8 +41,8 @@ export default {
             params: {
               codename: document.querySelector(".search-link").attributes[
                 "data-device"
-              ].value
-            }
+              ].value,
+            },
           });
         }
       }
@@ -53,23 +53,21 @@ export default {
       document.querySelectorAll(".wrapper")[0].style.display = "none";
       document.querySelectorAll("input")[0].blur();
       this.search = "";
-    }
+    },
   },
   computed: {
     filteredList() {
-      return this.$store.state.devices.flatMap(brands =>
-        brands.devices.filter(d => {
-          const resByCodename = d.codename
-            .toLowerCase()
-            .includes(this.search.toLowerCase());
-          const resByName = d.name
-            .toLowerCase()
-            .includes(this.search.toLowerCase());
+      return this.$store.state.devices.flatMap(brands => brands.devices.filter((d) => {
+        const resByCodename = d.codename
+          .toLowerCase()
+          .includes(this.search.toLowerCase());
+        const resByName = d.name
+          .toLowerCase()
+          .includes(this.search.toLowerCase());
 
-          return resByName || resByCodename;
-        })
-      );
-    }
-  }
+        return resByName || resByCodename;
+      }));
+    },
+  },
 };
 </script>
