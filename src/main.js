@@ -1,17 +1,17 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import App from './App.vue';
+import Vue from "vue";
+import VueRouter from "vue-router";
+import App from "./App.vue";
 
-import { store } from './store/store';
+import { store } from "./store/store";
 
-import { routes } from './routes';
+import { routes } from "./routes";
 
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  mode: 'hash',
+  mode: "hash",
   base: __dirname,
   routes,
 });
@@ -20,4 +20,4 @@ new Vue({
   render: h => h(App),
   router,
   store,
-}).$mount('#app');
+}).$mount("#app");

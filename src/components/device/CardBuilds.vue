@@ -74,11 +74,10 @@ export default {
     if (this.$route.params.filename) {
       this.$store.dispatch(
         "getIndexOfExpandedBuild",
-        this.$route.params.filename
+        this.$route.params.filename,
       );
-      document.title =
-        this.$route.params.filename ||
-        `Download ProjectSakura for ${this.$route.params.codename}`;
+      document.title = this.$route.params.filename
+        || `Download ProjectSakura for ${this.$route.params.codename}`;
     }
     this.openBuild(this.$store.state.expandedBuild);
     this.$store.dispatch("getIndexOfExpandedBuild", "");
@@ -88,11 +87,9 @@ export default {
       const elems = document.querySelector(".collapsible-builds");
       const instances = M.Collapsible.init(elems);
 
-      instances.options.onOpenEnd = () =>
-        this.$router.push({ name: "filename", params: { filename: obj } });
+      instances.options.onOpenEnd = () => this.$router.push({ name: "filename", params: { filename: obj } });
 
-      instances.options.onCloseEnd = () =>
-        this.$router.replace({ name: "filename", params: { filename: null } });
+      instances.options.onCloseEnd = () => this.$router.replace({ name: "filename", params: { filename: null } });
     },
     openBuild(index) {
       if (!isNaN(index) && index !== -1) {

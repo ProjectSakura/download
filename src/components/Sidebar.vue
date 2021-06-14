@@ -58,7 +58,7 @@ export default {
   components: {
     Loading,
     Search,
-    Logo
+    Logo,
   },
   mounted() {
     // init collapsible
@@ -71,13 +71,13 @@ export default {
     },
     brands() {
       return this.$store.state.devices;
-    }
+    },
   },
   methods: {
     hidebar() {
       const sidenav = document.querySelectorAll(".sidenav");
       M.Sidenav.init(sidenav);
-    }
-  }
+    },
+  },
 };
 </script>

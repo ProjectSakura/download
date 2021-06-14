@@ -3,7 +3,7 @@
     <h3 class="accent welcome">{{ subname }}</h3>
     <Ninja />
     <Logo width="350px" />
-
+    <Donate />
     <ProjectLink />
     <Credits />
   </div>
@@ -15,6 +15,7 @@ import Credits from "../components/home/Credits.vue";
 import configs from "../configs";
 import Logo from "../components/common/Logo.vue";
 import Ninja from "../components/common/Ninja.vue";
+import Donate from "../components/common/Donate.vue";
 
 export default {
   name: "Home",
@@ -23,11 +24,11 @@ export default {
     Credits,
     Logo,
     Ninja,
+    Donate,
   },
   created() {
     document.title = "Project Sakura | Downloads";
-    document.head.querySelector("meta[name=description]").content =
-      "Project Sakura | Downloads";
+    document.head.querySelector("meta[name=description]").content = "Project Sakura | Downloads";
   },
   computed: {
     subname() {

@@ -38,7 +38,7 @@ import Search from "../common/Search.vue";
 export default {
   name: "Credits",
   components: {
-    Search
+    Search,
   },
   data() {
     return {
@@ -46,20 +46,20 @@ export default {
         {
           title: "Project maintained by",
           value: "LordShenron and",
-          url: "https://github.com/LordShenron"
+          url: "https://github.com/LordShenron",
         },
         {
           title: "",
           value: "Arun Teltia",
-          url: "https://github.com/ArunTeltia"
+          url: "https://github.com/ArunTeltia",
         },
         {
           title: "Sponsored by ",
           value: "XSLTEL OU",
-          url: ""
-        }
-      ]
+          url: "",
+        },
+      ],
     };
-  }
+  },
 };
 </script>

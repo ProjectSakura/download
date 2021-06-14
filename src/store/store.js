@@ -1,7 +1,7 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 
-import { fetchDevices, fetchBuilds } from '../services/github';
+import { fetchDevices, fetchBuilds } from "../services/github";
 
 Vue.use(Vuex);
 
@@ -39,32 +39,32 @@ export const store = new Vuex.Store({
       const devices = await fetchDevices();
 
       if (devices) {
-        commit('setDevices', devices);
-        commit('updateDeviceLoader', false);
+        commit("setDevices", devices);
+        commit("updateDeviceLoader", false);
       }
     },
     async fetchBuilds({ commit, state }, props) {
-      commit('updateBuildLoader', true);
-      commit('setBuilds', []);
+      commit("updateBuildLoader", true);
+      commit("setBuilds", []);
 
       const builds = await fetchBuilds(props.codename);
 
       if (builds.length === 0 && state.device.codename) {
-        M.toast({ html: 'No builds found. Check again later.' });
+        M.toast({ html: "No builds found. Check again later." });
       }
 
-      commit('setBuilds', builds);
+      commit("setBuilds", builds);
 
-      commit('updateBuildLoader', false);
+      commit("updateBuildLoader", false);
     },
     filterDevice({ commit, state }, props) {
       state.devices
         .map(brand => brand.devices
           .filter(devices => devices.codename == props.codename)
-          .map(device => commit('setDevice', device)));
+          .map(device => commit("setDevice", device)));
     },
     getIndexOfExpandedBuild({ commit, state }, filename) {
-      commit('setExpandedBuild', state.builds.findIndex(b => b.filename === filename));
+      commit("setExpandedBuild", state.builds.findIndex(b => b.filename === filename));
     },
 
   },

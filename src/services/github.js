@@ -1,6 +1,7 @@
 import request from "../helpers/request";
 import { fetchDownloadsCount } from "./sourceforge";
 import { humanDate, humanSize } from "../helpers/utils";
+
 const baseURL = "https://raw.githubusercontent.com/ProjectSakura";
 
 const fetchDevices = async () => {
@@ -10,15 +11,13 @@ const fetchDevices = async () => {
     const devices = [];
 
     res.forEach(
-      device => !brands.includes(device.brand) && brands.push(device.brand)
+      device => !brands.includes(device.brand) && brands.push(device.brand),
     );
 
-    brands.forEach(brand =>
-      devices.push({
-        name: brand,
-        devices: res.filter(device => device.brand === brand)
-      })
-    );
+    brands.forEach(brand => devices.push({
+      name: brand,
+      devices: res.filter(device => device.brand === brand),
+    }));
 
     return devices;
   } catch (e) {
@@ -26,11 +25,11 @@ const fetchDevices = async () => {
   }
 };
 
-const fetchBuilds = async codename => {
+const fetchBuilds = async (codename) => {
   try {
     const res = await request(`${baseURL}/OTA/11/${codename}.json`);
     const promises = res.response
-      .map(async build => {
+      .map(async (build) => {
         const downloads = await fetchDownloadsCount(build.filename, codename);
         const changelog = await fetchChangelog(build.filename, codename);
 
@@ -41,7 +40,7 @@ const fetchBuilds = async codename => {
           datetime: humanDate(build.datetime),
           md5: build.id,
           downloads,
-          changelog
+          changelog,
         };
       })
       .reverse();
@@ -50,7 +49,7 @@ const fetchBuilds = async codename => {
       const res2 = await request(`${baseURL}/OTA/10/${codename}.json`);
       console.log(res2);
       const promises1 = res2.response
-        .map(async build => {
+        .map(async (build) => {
           const downloads = await fetchDownloadsCount(build.filename, codename);
           const changelog = await fetchChangelog10(build.filename, codename);
 
@@ -61,7 +60,7 @@ const fetchBuilds = async codename => {
             datetime: humanDate(build.datetime),
             md5: build.id,
             downloads,
-            changelog
+            changelog,
           };
         })
         .reverse();
@@ -83,7 +82,7 @@ const fetchChangelog = async (filename, codename) => {
   try {
     const res = await request(
       `${baseURL}/OTA/11/changelog/changelog_${codename}.txt`,
-      false
+      false,
     );
 
     return res.includes("404") ? "Changelog data no found" : res;
@@ -96,7 +95,7 @@ const fetchChangelog10 = async (filename, codename) => {
   try {
     const res = await request(
       `${baseURL}/OTA/10/changelog/changelog_${codename}.txt`,
-      false
+      false,
     );
 
     return res.includes("404") ? "Changelog data no found" : res;
@@ -107,7 +106,7 @@ const fetchChangelog10 = async (filename, codename) => {
 const fetchROMChangelog = async () => {
   const res = await request(
     "https://raw.githubusercontent.com/ProjectSakura/OTA/11/changelog/rom_changelog.txt",
-    false
+    false,
   );
   return res;
 };

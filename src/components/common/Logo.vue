@@ -9,7 +9,7 @@
 <script>
 export default {
   props: ["width"],
-  name: "Logo"
+  name: "Logo",
 };
 </script>
 <style></style>

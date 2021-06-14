@@ -16,12 +16,17 @@ th,
 pre {
   color: var(--text);
 }
-
+p{
+  color: var(--accent);
+}
 *,
 input {
   font-family: "Product Sans";
 }
-
+.messageContainer{
+  border: 1px solid var(--accent);
+  cursor: pointer;
+}
 .accent {
   color: var(--accent);
 }
