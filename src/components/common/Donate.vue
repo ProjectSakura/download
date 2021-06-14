@@ -1,7 +1,7 @@
 <template>
   <div class="messageContainer">
     <a href="https://projectsakura.xyz/blog/#/donation" target="blank">
-      <p class="message">Donate us and feature your name or orgainsation's logo on our donation site.</p>
+      <p class="message">Become a donator and get your name or organisation's logo on our donations page.</p>
     </a>
   </div>
 </template>
