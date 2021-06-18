@@ -3,29 +3,29 @@
     <Search />
     <div class="buttons">
       <a
-        target="_blank"
+        target="blank"
         href="https://projectsakura.xyz/blog/#/donation"
         @click="hidebar"
         class="btn"
         >Donate us</a
       >
       <a
-        target="_blank"
+        target="blank"
         href="https://projectsakura.xyz"
         @click="hidebar"
         class="btn"
         >Home</a
       >
       <a
-        target="_blank"
+        target="blank"
         href="https://projectsakura.xyz/stats.html"
         @click="hidebar"
         class="btn"
         >Stats</a
       >
       <a
-        target="_blank"
-        href="https://projectsakura.xyz/blog.html"
+        target="blank"
+        href="https://projectsakura.xyz/blog/#/"
         @click="hidebar"
         class="btn"
         >Blog</a
