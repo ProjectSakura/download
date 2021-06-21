@@ -1,3 +1,4 @@
+// Can be used for future sponsorships KINDLY DONT REMOVE THIS
 <template>
   <div>
     <a

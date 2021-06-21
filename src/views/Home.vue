@@ -1,7 +1,7 @@
 <template>
   <div class="home center">
     <h3 class="accent welcome">{{ subname }}</h3>
-    <Ninja />
+    <!-- <Ninja /> -->
     <Logo width="350px" />
     <Donate />
     <ProjectLink />
