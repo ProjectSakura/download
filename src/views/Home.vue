@@ -1,7 +1,6 @@
 <template>
   <div class="home center">
     <h3 class="accent welcome">{{ subname }}</h3>
-    <!-- <Ninja /> -->
     <Logo width="350px" />
     <Donate />
     <ProjectLink />
@@ -14,7 +13,6 @@ import ProjectLink from "../components/home/ProjectLink.vue";
 import Credits from "../components/home/Credits.vue";
 import configs from "../configs";
 import Logo from "../components/common/Logo.vue";
-import Ninja from "../components/common/Ninja.vue";
 import Donate from "../components/common/Donate.vue";
 
 export default {
@@ -23,7 +21,6 @@ export default {
     ProjectLink,
     Credits,
     Logo,
-    Ninja,
     Donate,
   },
   created() {
