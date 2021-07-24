@@ -43,8 +43,13 @@
                 <p class="label">Device Changelog</p>
                 <pre>{{ build.changelog }}</pre>
               </div>
-
               <div class="buildbuttons">
+                <a
+                  href="https://projectsakura.xyz/blog/#/donation"
+                  target="_blank"
+                  class="btn"
+                  >Donate To ROM</a
+                >
                 <a
                   v-on:click="download(build.filename, device.codename)"
                   download
