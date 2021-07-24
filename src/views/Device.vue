@@ -19,17 +19,16 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
       <script
+        type="application/javascript"
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-173637831-1"
       ></script>
-      <script>
+      <script type="application/javascript">
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
           dataLayer.push(arguments);
         }
         gtag("js", new Date());
-
         gtag("config", "UA-173637831-1");
       </script>
     </center>
@@ -39,26 +38,26 @@
 </template>
 
 <script>
-import CardHeader from "../components/device/CardHeader.vue";
-import CardBuilds from "../components/device/CardBuilds.vue";
+import CardHeader from '../components/device/CardHeader.vue';
+import CardBuilds from '../components/device/CardBuilds.vue';
 
 export default {
-  name: "Device",
+  name: 'Device',
   components: {
     CardHeader,
     CardBuilds,
   },
   created() {
-    this.$store.dispatch("fetchBuilds", this.$route.params);
+    this.$store.dispatch('fetchBuilds', this.$route.params);
   },
   mounted() {
     console.log(this.$store.state.device);
   },
   watch: {
-    "$route.params.codename": {
+    '$route.params.codename': {
       handler(params) {
-        this.$store.dispatch("filterDevice", { codename: params });
-        this.$store.dispatch("fetchBuilds", { codename: params });
+        this.$store.dispatch('filterDevice', { codename: params });
+        this.$store.dispatch('fetchBuilds', { codename: params });
       },
     },
   },
