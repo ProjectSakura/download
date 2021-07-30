@@ -1,3 +1,4 @@
+/* eslint-disable */
 import request from "../helpers/request";
 import { fetchDownloadsCount } from "./sourceforge";
 import { humanDate, humanSize } from "../helpers/utils";
@@ -27,7 +28,7 @@ const fetchDevices = async () => {
 
 const fetchBuilds = async (codename) => {
   try {
-    const res = await request(`${baseURL}/OTA/11/${codename}.json`);
+    const res = await request(`${baseURL}/OTA/11/website/${codename}.json`);
     const promises = res.response
       .map(async (build) => {
         const downloads = await fetchDownloadsCount(build.filename, codename);
