@@ -40,6 +40,8 @@ export default {
           "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/281/flag-united-kingdom_1f1ec-1f1e7.png",
         OM:
           "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/flag-oman_1f1f4-1f1f2.png",
+        VN:
+          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/flag-vietnam_1f1fb-1f1f3.png",
       };
 
       if (flags[this.country]) {
