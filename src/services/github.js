@@ -28,7 +28,7 @@ const fetchDevices = async () => {
 
 const fetchBuilds = async (codename) => {
   try {
-    const res = await request(`${baseURL}/OTA/11/website/${codename}.json`);
+    const res = await request(`${baseURL}/OTA/14/website/${codename}.json`);
     const promises = res.response
       .map(async (build) => {
         const downloads = await fetchDownloadsCount(build.filename, codename);
@@ -36,7 +36,7 @@ const fetchBuilds = async (codename) => {
 
         return {
           ...build,
-          android: 11,
+          android: 14,
           size: humanSize(build.size),
           datetime: humanDate(build.datetime),
           md5: build.id,
@@ -45,9 +45,9 @@ const fetchBuilds = async (codename) => {
         };
       })
       .reverse();
-
+    
     try {
-      const res2 = await request(`${baseURL}/OTA/10/${codename}.json`);
+      const res2 = await request(`${baseURL}/OTA/11/${codename}.json`);
       console.log(res2);
       const promises1 = res2.response
         .map(async (build) => {
@@ -56,7 +56,7 @@ const fetchBuilds = async (codename) => {
 
           return {
             ...build,
-            android: 10,
+            android: 11,
             size: humanSize(build.size),
             datetime: humanDate(build.datetime),
             md5: build.id,
@@ -82,7 +82,7 @@ const fetchBuilds = async (codename) => {
 const fetchChangelog = async (filename, codename) => {
   try {
     const res = await request(
-      `${baseURL}/OTA/11/changelog/changelog_${codename}.txt`,
+      `${baseURL}/OTA/14/changelog/changelog_${codename}.txt`,
       false,
     );
 
@@ -95,7 +95,7 @@ const fetchChangelog = async (filename, codename) => {
 const fetchChangelog10 = async (filename, codename) => {
   try {
     const res = await request(
-      `${baseURL}/OTA/10/changelog/changelog_${codename}.txt`,
+      `${baseURL}/OTA/11/changelog/changelog_${codename}.txt`,
       false,
     );
 
@@ -106,7 +106,7 @@ const fetchChangelog10 = async (filename, codename) => {
 };
 const fetchROMChangelog = async () => {
   const res = await request(
-    "https://raw.githubusercontent.com/ProjectSakura/OTA/11/changelog/rom_changelog.txt",
+    "https://raw.githubusercontent.com/ProjectSakura/OTA/14/changelog/rom_changelog.txt",
     false,
   );
   return res;
