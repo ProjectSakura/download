@@ -7,7 +7,7 @@ const baseURL = "https://raw.githubusercontent.com/ProjectSakura";
 
 const fetchDevices = async () => {
   try {
-    const res = await request(`${baseURL}/OTA/11/devices.json`);
+    const res = await request(`${baseURL}/OTA/14/devices.json`);
     const brands = [];
     const devices = [];
 
