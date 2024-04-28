@@ -3,11 +3,7 @@
     <div class="credits">
       Project maintained by
       <a href="https://github.com/LordShenron">LordShenron</a> and
-      <a href="https://github.com/ArunTeltia">Arun Teltia</a>
-    </div>
-    <div class="credits">
-      Sponsored by
-      <a href="">XSLTEL OU</a>
+      <a href="https://github.com/ReveRTX">ReveRTX</a>
     </div>
     <div class="container" style="width:100%">
       <center>
@@ -50,13 +46,8 @@ export default {
         },
         {
           title: "",
-          value: "Arun Teltia",
-          url: "https://github.com/ArunTeltia",
-        },
-        {
-          title: "Sponsored by ",
-          value: "XSLTEL OU",
-          url: "",
+          value: "ReveRTX",
+          url: "https://github.com/ReveRTX",
         },
       ],
     };

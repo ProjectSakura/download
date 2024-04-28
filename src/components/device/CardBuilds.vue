@@ -45,7 +45,7 @@
               </div>
               <div class="buildbuttons">
                 <a
-                  href="https://projectsakura.xyz/blog/#/donation"
+                  href="https://projectsakura.me/blog/#/donation"
                   target="_blank"
                   class="btn"
                   >Donate To ROM</a

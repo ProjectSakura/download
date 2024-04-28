@@ -63,7 +63,7 @@
 
           <div v-if="!device.active" class="card-action xda-buttons">
             <a
-              href="https://forms.gle/dchk8MiQhna6cFts7"
+              href="https://forms.gle/ZoMubccCFRoyu18JA"
               target="_blank"
               class="waves-effect btn red-bg"
               >Become the maintainer</a
