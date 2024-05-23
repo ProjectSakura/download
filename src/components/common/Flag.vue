@@ -42,6 +42,18 @@ export default {
           "https://em-content.zobj.net/source/twitter/376/flag-oman_1f1f4-1f1f2.png",
         VN:
           "https://em-content.zobj.net/source/twitter/376/flag-vietnam_1f1fb-1f1f3.png",
+        TH:
+          "https://em-content.zobj.net/source/twitter/376/flag-thailand_1f1f9-1f1ed.png",
+        NZ:
+          "https://em-content.zobj.net/source/twitter/376/flag-new-zealand_1f1f3-1f1ff.png",
+        PH:          
+          "https://em-content.zobj.net/source/twitter/376/flag-philippines_1f1f5-1f1ed.png",
+        AUS:          
+          "https://em-content.zobj.net/source/twitter/376/flag-australia_1f1e6-1f1fa.png",
+        CN:          
+          "https://em-content.zobj.net/source/twitter/376/flag-china_1f1e8-1f1f3.png",
+        JP:          
+          "https://em-content.zobj.net/source/twitter/376/flag-japan_1f1ef-1f1f5.png",
       };
 
       if (flags[this.country]) {
