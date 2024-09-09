@@ -42,6 +42,8 @@ export default {
           "https://em-content.zobj.net/source/twitter/376/flag-oman_1f1f4-1f1f2.png",
         VN:
           "https://em-content.zobj.net/source/twitter/376/flag-vietnam_1f1fb-1f1f3.png",
+        DE:
+          "https://em-content.zobj.net/source/twitter/408/flag-germany_1f1e9-1f1ea.png",
         TH:
           "https://em-content.zobj.net/source/twitter/376/flag-thailand_1f1f9-1f1ed.png",
         NZ:
