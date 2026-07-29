@@ -5,9 +5,14 @@ import { humanDate, humanSize } from "../helpers/utils";
 
 const baseURL = "https://raw.githubusercontent.com/ProjectSakura";
 
+// Current OTA branch (matches the branch name in ProjectSakura/OTA, NOT the
+// "16.3"-style branches used in device/vendor/manifest repos — OTA only has
+// 11, 14, 16, so keep this in sync with that repo specifically).
+const OTA_BRANCH = "16";
+
 const fetchDevices = async () => {
   try {
-    const res = await request(`${baseURL}/OTA/14/devices.json`);
+    const res = await request(`${baseURL}/OTA/${OTA_BRANCH}/devices.json`);
     const brands = [];
     const devices = [];
 
@@ -28,7 +33,7 @@ const fetchDevices = async () => {
 
 const fetchBuilds = async (codename) => {
   try {
-    const res = await request(`${baseURL}/OTA/14/website/${codename}.json`);
+    const res = await request(`${baseURL}/OTA/${OTA_BRANCH}/website/${codename}.json`);
     const promises = res.response
       .map(async (build) => {
         const downloads = await fetchDownloadsCount(build.filename, codename);
@@ -36,7 +41,7 @@ const fetchBuilds = async (codename) => {
 
         return {
           ...build,
-          android: 14,
+          android: Number(OTA_BRANCH),
           size: humanSize(build.size),
           datetime: humanDate(build.datetime),
           md5: build.id,
@@ -82,7 +87,7 @@ const fetchBuilds = async (codename) => {
 const fetchChangelog = async (filename, codename) => {
   try {
     const res = await request(
-      `${baseURL}/OTA/14/changelog/changelog_${codename}.txt`,
+      `${baseURL}/OTA/${OTA_BRANCH}/changelog/changelog_${codename}.txt`,
       false,
     );
 
@@ -106,7 +111,7 @@ const fetchChangelog10 = async (filename, codename) => {
 };
 const fetchROMChangelog = async () => {
   const res = await request(
-    "https://raw.githubusercontent.com/ProjectSakura/OTA/14/changelog/rom_changelog.txt",
+    `https://raw.githubusercontent.com/ProjectSakura/OTA/${OTA_BRANCH}/changelog/rom_changelog.txt`,
     false,
   );
   return res;
