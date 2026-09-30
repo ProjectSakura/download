@@ -2,6 +2,7 @@
   <div>
     <div class="credits">
       Project maintained by
+      <a href="https://github.com/ArmSM">ArmSM</a>,
       <a href="https://github.com/LordShenron">LordShenron</a> and
       <a href="https://github.com/ReveRTX">ReveRTX</a>
     </div>
@@ -41,6 +42,11 @@ export default {
       credits: [
         {
           title: "Project maintained by",
+          value: "ArmSM,",
+          url: "https://github.com/ArmSM",
+        },
+        {
+          title: "",
           value: "LordShenron and",
           url: "https://github.com/LordShenron",
         },
