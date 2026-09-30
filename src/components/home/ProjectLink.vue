@@ -4,28 +4,28 @@
     <div class="buttons">
       <a
         target="blank"
-        href="https://projectsakura.me/blog/#/donation"
+        href="https://projectsakura.github.io/blog/#/donation"
         @click="hidebar"
         class="btn"
         >Donate us</a
       >
       <a
         target="blank"
-        href="https://projectsakura.me"
+        href="https://projectsakura.github.io"
         @click="hidebar"
         class="btn"
         >Home</a
       >
       <a
         target="blank"
-        href="https://projectsakura.me/stats.html"
+        href="https://projectsakura.github.io/stats.html"
         @click="hidebar"
         class="btn"
         >Stats</a
       >
       <a
         target="blank"
-        href="https://projectsakura.me/blog/#/"
+        href="https://projectsakura.github.io/blog/#/"
         @click="hidebar"
         class="btn"
         >Blog</a
